@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F8FAFB;
+    overflow-x: hidden;
+    
+}
+
+main{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    min-height: 700px;
+    min-width: 240px;
+    height: 90vh;
+}
+
+.imagem img{
+    width: 90%;
+    min-height: 100px;
+    object-fit: cover;
+}
+
+.formulario{
+    width: 50%;
+}
+
+.textos{
+    max-width: 390px;
+}
+
+.textos h1{
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #212529;
+    margin: 0px 0px 8px;
+    line-height: 34px;
+}
+
+.textos p{
+    color: #B3B3B3;
+    font-size: 1em;
+    margin: 0px 0px 24px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+form{
+    max-width: 400px;
+    min-height: 200px;
+}
+
+form input[type="email"], form input[type="password"]{
+    display: block;
+    width: 100%;
+    height: 75px;
+    border: none;
+    outline: none;
+    background-color: #EDF2F5;
+    color: #b3b3b3;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+/*checkbox inicio*/
+
+.checkbox-form{
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #888888;
+    margin-right: 35%;
+}
+
+.checkbox-form input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: #CCCCCC;
+    border-radius: 2px;
+}
+
+.checkbox-form:hover input ~ .checkmark{
+    background-color: rgb(112, 109, 109);
+}
+
+.checkbox-form input:checked ~ .checkmark{
+    background-color: #6C63FF;
+}
+
+.checkbox-form .checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox-form input:checked ~ 
+.checkmark:after{
+    display: block;
+}
+
+/*checkbox fim*/
+
+
+.password{
+    display: inline-block;
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+
+.password:hover{
+    color: #6C63FF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #6C63FF;
+    padding: 6px 30px;
+    height: 54px;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #483DFF;
+}
+
+.social{
+    text-align: start;
+}
+
+.social p{
+    margin: 10px;
+    color: #6C757D;
+    font-size: 1.1em;
+}
+
+.facebook, .google, .twitter{
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 16px;
+    font-size: 1em;
+}
+
+.facebook{
+    background-color: #344E86;
+}
+
+.google{
+    background-color: #0D95E8;
+}
+
+
+.twitter{
+    background-color: #E82E1E;
+}
+
+.facebook:hover{
+    background-color: #273b62;
+    transition: 0.4s all;
+}
+
+.google:hover{
+    background-color: #117bbd;
+    transition: 0.4s all;
+}
+
+.twitter:hover{
+    background-color: #c12618;
+    transition: 0.4s all;
+}
+
+
+

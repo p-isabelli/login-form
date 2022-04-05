@@ -1,0 +1,46 @@
+@media screen and (max-width:760px){
+
+    body{
+        overflow-y: scroll;
+    }
+
+    main{
+        max-width: 760px;
+        flex-direction: column;
+    }
+
+    .password{
+        text-align: start;
+        margin: 15px 0px;
+    }
+
+    .formulario, form, .imagem img{
+        max-width: 740px;
+        width: 100%;
+    }
+
+    .imagem img{
+        object-fit: cover;
+        margin-top: 100px;
+        max-height: 200px;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width:765px) and (max-width: 1080px){
+    body{
+        overflow-y: scroll;
+    }
+    
+    main{
+        max-width: 960px;
+        width: 90%;
+        height: 50vh
+    }
+
+    .imagem img{
+        max-width: 480px;
+        width: 100%;
+    }
+
+}
